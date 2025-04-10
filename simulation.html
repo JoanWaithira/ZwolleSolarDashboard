@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwolle Solar Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 1rem;
+        }
+        .scenario {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .scenario h3 {
+            margin-top: 0;
+        }
+        .output {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zwolle Solar Dashboard</h1>
+        <p>Simulate future solar scenarios for Zwolle</p>
+    </header>
+    <main>
+        <div class="scenario">
+            <h3>Simulation 1: Max Out Roof Spaces</h3>
+            <p>Simulate maximizing solar panel installations on all suitable roofing areas.</p>
+            <button onclick="simulateScenario(1)">Run Simulation</button>
+            <div id="output1" class="output"></div>
+        </div>
+        <div class="scenario">
+            <h3>Scenario 2: Industrial Areas Only</h3>
+            <p>Simulate solar panel installations on buildings in industrial areas alone.</p>
+            <button onclick="simulateScenario(2)">Run Simulation</button>
+            <div id="output2" class="output"></div>
+        </div>
+        <div class="scenario">
+            <h3>Scenario 3: Near the Grid Line</h3>
+            <p>Simulate solar panel installations on buildings near the grid line.</p>
+            <button onclick="simulateScenario(3)">Run Simulation</button>
+            <div id="output3" class="output"></div>
+        </div>
+    </main>
+    <script>
+        function simulateScenario(scenario) {
+            const output = document.getElementById(`output${scenario}`);
+            output.innerHTML = "Running simulation...";
+
+            // Simulate a delay for the computation
+            setTimeout(() => {
+                switch (scenario) {
+                    case 1:
+                        output.innerHTML = "Scenario 1 complete: Roof spaces maximized. Estimated energy output: 500 MW.";
+                        break;
+                    case 2:
+                        output.innerHTML = "Scenario 2 complete: Industrial areas only. Estimated energy output: 300 MW.";
+                        break;
+                    case 3:
+                        output.innerHTML = "Scenario 3 complete: Near the grid line. Estimated energy output: 400 MW.";
+                        break;
+                    default:
+                        output.innerHTML = "Unknown scenario.";
+                }
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
