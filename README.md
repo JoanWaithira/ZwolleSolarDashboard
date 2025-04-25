@@ -45,3 +45,8 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 For questions or feedback, reach out via [email](mailto:joanwaithira.jw@gmail.com) or open an issue on GitHub.
 
 
+### Explore the streamlit Prototype ---> Still under production
+
+https://solardashboard-si69kaz8mv5oypzjbxabny.streamlit.app/
+
+

@@ -80,6 +80,10 @@ The prototype implementation focuses on the Stadshagen district, analyzing:
 
 The dashboard is envisioned as a **planning and communication tool** embedded in Zwolle's annual climate strategy cycle. It facilitates participatory governance, evidence-based policy development, and transparent monitoring of energy transition progress.
 
+## Prototype from Streamlit --> Still under development
+https://solardashboard-si69kaz8mv5oypzjbxabny.streamlit.app/
+
+
 ## Contact
 
 For questions or collaboration:  
